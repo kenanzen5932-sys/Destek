@@ -1,4 +1,4 @@
-<!doctype html><html lang="tr"><head><script>
+<!doctype html><html lang="tr"><head><script>/* eski geliştirici analitiği (localhost:8877) → sessizce yut */(function(){var f=window.fetch;if(!f)return;window.fetch=function(u,o){try{var s=typeof u==="string"?u:(u&&u.url)||"";if(s.indexOf("localhost:8877")>=0)return Promise.resolve(new Response("{}",{status:200,headers:{"Content-Type":"application/json"}}));}catch(e){}return f.apply(this,arguments);};})();</script><script>
 (function() {
   var defaultApi = 'https://rotriajxffiwouamtocp.supabase.co/functions/v1/room-support';
   try {
